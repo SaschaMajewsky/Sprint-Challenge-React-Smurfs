@@ -1,3 +1,172 @@
 .App {
   text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("/assets/smurf-background.jpg");
+  height: 100vh;
+}
+
+.nav {
+  background: rgba(85, 83, 83, 0.5);
+  display: flex;
+  font-size: 2rem;
+}
+
+.activeNavButton {
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.title {
+  color: #01b6ed;
+  width: 16rem;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.Smurfs {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid white;
+  background: rgba(117, 115, 115, 0.4);
+  border-radius: 5px;
+  width: 70rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.Smurf {
+  margin: 2rem;
+  border: 5px solid #01b6ed;
+  background: #fcfcfe;
+  border-radius: 20px;
+  width: 12rem;
+}
+
+.SmurfForm {
+  height: 100vh;
+}
+
+.smurf-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Smurf-List {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input {
+  width: 10rem;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+/* material design button */
+.md-button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 8px;
+  border: none;
+  border-radius: 2px;
+  padding: 0 16px;
+  min-width: 64px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1c5d76;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  font-family: 'Roboto', 'Segoe UI', BlinkMacSystemFont, system-ui,
+    -apple-system;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.md-button:hover,
+.md-button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.md-button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.md-button:disabled {
+  color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  cursor: initial;
+}
+
+.md-button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.md-button:hover::before {
+  opacity: 0.12;
+}
+
+.md-button:focus::before {
+  opacity: 0.2;
+}
+
+.md-button:active::before {
+  opacity: 0.32;
+}
+
+.md-button:disabled::before {
+  opacity: 0;
+}
+
+.md-button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  border-radius: 50%;
+  padding: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: currentColor;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+
+.md-button:active::after {
+  opacity: 0.4;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+.md-button:disabled::after {
+  opacity: 0;
 }
