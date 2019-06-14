@@ -31,7 +31,7 @@ class App extends Component {
     axios
       .post("http://localhost:3333/smurfs", smurf)
       .then(res => {
-        console.log("POST: ", res)
+        /* console.log("POST: ", res) */
         this.setState({ smurfs: res.data })
       })
       .catch(err => console.log("POST ERR: ", err))
@@ -42,7 +42,7 @@ class App extends Component {
     axios
       .delete(`http://localhost:3333/smurfs/${id}`)
       .then(res => {
-        console.log("DEL: ", res);
+       /*  console.log("DEL: ", res); */
         this.setState({ smurfs: res.data });
       })
       .catch(err => console.log("DEL ERR: ", err));
